@@ -1,0 +1,119 @@
+
+.contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	align-items: center;
+	flex-direction: column;
+	background: url('call.jpg');
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-position: center; 
+}
+.contact .content{
+	overflow: hidden;
+	max-width: 800px;
+	text-align: left;
+}
+.contact .content h2{
+	font-size: 36px;
+	font-weight: 500;
+	color: #023952;
+	margin-bottom: 20px;
+	 animation: 2s anim-lineUp ease-out ;
+	}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+}
+.contact .content p{
+	font-weight: 300;
+	color: #1B4C63;
+	font-size: 17px;
+}
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.container .contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+
+}
+.container .contactInfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.container .contactInfo .box .icon{
+	min-width: 60px;
+	height: 60px;
+	background: #A4DFF2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+.container .contactInfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: white;
+	flex-direction: column;
+	font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+	font-weight: 500;
+	color:#01202e;
+}
+
+.division{
+	width: 40%;
+	padding: 40px;
+	
+}
+
+
+
+
+/* send us message animation*/
+
+
+@media (max-width: 991px)
+{
+	.contact{
+		padding: 50px;
+	}
+	.container {
+		flex-direction: column;
+		
+	}
+	.contactForm {
+		width: 100%;
+	}
+}
+.footer {
+   width: 100%;
+   background-color: white;
+   display: flex;
+  flex-direction: row-reverse;
+}
